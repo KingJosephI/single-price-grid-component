@@ -30,14 +30,16 @@ main {
 
 .container {
   background-color: hsl(0, 0%, 100%);
-  width: 400px;
+  max-width: 400px;
   border-radius: 0.3rem;
+  overflow: hidden;
 }
 
 .container__community,
 .container__subscription, 
 .container__why-us{
   padding: 2rem;
+  width: 100%;
 }
 
 .container__community h1{
@@ -86,7 +88,6 @@ main {
 
 .container__description{
   font-size: 1.1rem;
-
 }
 
 .container__sign-up{
@@ -104,4 +105,50 @@ main {
 .container__why-us {
   background-color: hsla(179, 62%, 43%, 0.842);
   color: var(--light-gray);
+}
+
+.container__why-us h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 1.2rem;
+}
+
+.container__why-us ul {
+  list-style: none;
+  color: hsla(203, 44%, 93%, 0.747);
+}
+
+
+.container__why-us li {
+  padding: 0.3rem 0;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    max-width: 600px;
+
+  }
+  .container__part2 {
+    display: flex;
+   
+  }
+
+  .container__description{
+    font-size: 0.95rem;
+  
+  }
+
+  .container__subscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container__part2 > div {
+    max-height: 16.5rem;
+  }
+
+  .container__why-us li {
+    padding: 0.1rem 0;
+  }
 }
