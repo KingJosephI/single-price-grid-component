@@ -14,18 +14,17 @@
 }
 
 body {
-  font-family: 'Karla', sans-serif;
-  font-size: 16px;
-}
-
-main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;  
   background-color: hsl(204, 43%, 93%);
-  padding: 2rem;
+}
 
+main {
+  margin: 2rem;
 }
 
 .container {
@@ -87,7 +86,7 @@ main {
 }
 
 .container__description{
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .container__sign-up{
@@ -120,7 +119,7 @@ main {
 
 
 .container__why-us li {
-  padding: 0.3rem 0;
+  padding: 0.2rem 0;
 }
 
 @media screen and (min-width: 700px) {
@@ -133,9 +132,12 @@ main {
    
   }
 
+  .container__part2 > div {
+    max-height: 16.5rem;
+  }
+
   .container__description{
-    font-size: 0.95rem;
-  
+    font-size: 0.95rem;  
   }
 
   .container__subscription{
@@ -144,9 +146,6 @@ main {
     justify-content: space-between;
   }
 
-  .container__part2 > div {
-    max-height: 16.5rem;
-  }
 
   .container__why-us li {
     padding: 0.1rem 0;
