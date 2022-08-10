@@ -31,13 +31,13 @@ main {
 .container {
   background-color: hsl(0, 0%, 100%);
   width: 400px;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
 }
 
 .container__community,
 .container__subscription, 
 .container__why-us{
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .container__community h1{
@@ -55,4 +55,53 @@ main {
   color: var(--grayish-blue);
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.container__subscription {
+  background-color: var(--cyan);
+  color: var(--light-gray);
+  
+}
+
+.container__subscription h2{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.container__dollar {
+  padding: 0.9rem 0 0.8rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  vertical-align: text-top;
+  display: flex;
+  align-items: center;
+}
+
+.container__subscription span{
+  color:hsla(203, 44%, 93%, 0.647);
+  font-size: 1rem;
+  font-weight: normal;
+  padding-left: 1rem;
+}
+
+.container__description{
+  font-size: 1.1rem;
+
+}
+
+.container__sign-up{
+  display: block;
+  text-decoration: none;
+  color: var(--light-gray);
+  background-color: var(--bright-yellow);
+  padding: 0.7rem 0.9rem;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.container__why-us {
+  background-color: hsla(179, 62%, 43%, 0.842);
+  color: var(--light-gray);
 }
